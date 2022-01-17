@@ -7,7 +7,14 @@ const App = () => {
           <HeaderText>Trading Robot Tracker</HeaderText>
         </Header>
         <DashboardContainer>
-          DASHBOARD
+          {/* Área de Informações */}
+
+
+          {/* Área de Inclusão de Dados */}
+          
+
+          {/* Tabela de Resultados  */}
+
         </DashboardContainer>
 
     </Container>
