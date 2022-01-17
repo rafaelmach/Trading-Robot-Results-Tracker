@@ -1,11 +1,16 @@
-import React from 'react'
-import { ContainerTest } from './App.styles'
+import { Container, DashboardContainer, Header, HeaderText } from './App.styles'
 
 const App = () => {
   return (
-    <ContainerTest>
-        APP - TESTE
-    </ContainerTest>
+    <Container>
+        <Header>
+          <HeaderText>Trading Robot Tracker</HeaderText>
+        </Header>
+        <DashboardContainer>
+          DASHBOARD
+        </DashboardContainer>
+
+    </Container>
   )
 }
 
