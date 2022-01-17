@@ -7,7 +7,7 @@ const App = () => {
           <HeaderText>Trading Robot Tracker</HeaderText>
         </Header>
         <DashboardContainer>
-
+          DASHBOARD
         </DashboardContainer>
 
     </Container>
