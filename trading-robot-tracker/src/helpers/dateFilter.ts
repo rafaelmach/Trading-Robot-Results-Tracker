@@ -20,3 +20,25 @@ export const filterListByMonth = (list: Item[], date: string): Item[] => {
   }
   return newList
 }
+
+const addZeroToDate = (n: number): string => {
+  if(n < 10) {
+    return `0${n}`
+  } else {
+    return `${n}`
+  }
+}
+
+// Outra forma de escrever essa função ...
+// const addZeroToDate = (n: number): string => n < 10 ? `0${n}` : `${n}`
+
+export const formatDate = (date: Date): string => {
+    let year = date.getFullYear()
+    let month = date.getMonth() + 1
+    let day = date.getDate()
+
+    return `${addZeroToDate(day)}/${addZeroToDate(month)}/${year}`
+}
+
+
+

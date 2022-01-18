@@ -18,10 +18,11 @@ const App = () => {
     setFilteredList(filterListByMonth(list, currentMonth))
   }, [list, currentMonth])
 
+  console.log(filteredList)
   return (
     <Container>
       <Header>
-        <HeaderText>Trading Robot Tracker</HeaderText>
+        <HeaderText>Trading Dashboard</HeaderText>
       </Header>
       <DashboardContainer>
         {/* Área de Informações */}
@@ -29,7 +30,7 @@ const App = () => {
         {/* Área de Inclusão de Dados */}
 
         {/* Tabela de Resultados  */}
-        <TableArea />
+        <TableArea list={filteredList}/>
       </DashboardContainer>
     </Container>
   )
