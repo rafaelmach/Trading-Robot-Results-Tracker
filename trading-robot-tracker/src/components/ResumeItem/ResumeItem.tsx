@@ -3,13 +3,14 @@ import { Container, ResumeValues, Title } from "./ResumeItem.styles"
 type Props = {
   title: string
   value: number
+  color?: string
 }
 
 
-const ResumeItem = ({ title, value }: Props) => {
+const ResumeItem = ({ title, value, color }: Props) => {
   return <Container>
     <Title>{title}</Title>
-    <ResumeValues>R$ {value}</ResumeValues>
+    <ResumeValues color={color}>R$ {value}</ResumeValues>
   </Container>
 }
 

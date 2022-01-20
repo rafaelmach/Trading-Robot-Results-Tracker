@@ -43,7 +43,11 @@ const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props) => {
       <ResumeArea>
       <ResumeItem title="Lucro" value={income} />
       <ResumeItem title="Prejuízo" value={expense} />
-      <ResumeItem title="Resultado Líq" value={income - expense} />
+      <ResumeItem title="Resultado Líq"
+       value={income - expense}
+       color={(income - expense) < 0 ? "red" : "blue"}
+       
+       />
       </ResumeArea>
     </Container>
   )

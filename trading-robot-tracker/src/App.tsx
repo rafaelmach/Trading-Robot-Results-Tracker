@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react"
 import { Container, DashboardContainer, Header, HeaderText } from "./App.styles"
 import { Item } from "./types/Item"
-import { Category } from "./types/Category"
+// import { Category } from "./types/Category"
 import { categories } from "./data/categories"
 import { items } from "./data/items"
 import { filterListByMonth, getCurrentMonth } from "./helpers/dateFilter"
 import TableArea from "./components/TableArea/TableArea"
 import InfoArea from "./components/InfoArea/InfoArea"
+import InputArea from "./components/InputArea/InputArea"
 
 const App = () => {
   const [list, setList] = useState(items)
@@ -41,6 +42,12 @@ const App = () => {
     setCurrentMonth(newMonth)
   }
 
+  const handleAddItem = (item: Item) => {
+    let newList = [...list]
+    newList.push(item)
+    setList(newList)
+  }
+
   return (
     <Container>
       <Header>
@@ -56,6 +63,7 @@ const App = () => {
         />
 
         {/* Área de Inclusão de Dados */}
+        {/* <InputArea onAdd={handleAddItem} /> */}
 
         {/* Tabela de Resultados  */}
         <TableArea list={filteredList} />
