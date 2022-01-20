@@ -1,4 +1,5 @@
 import { formatCurrentMonth } from "../../helpers/dateFilter"
+import ResumeItem from "../ResumeItem/ResumeItem"
 import {
   Container,
   LeftArrow,
@@ -11,9 +12,12 @@ import {
 type Props = {
   currentMonth: string
   onMonthChange: (newMonth: string) => void
+  income: number
+  expense: number
 }
 
-const InfoArea = ({ currentMonth, onMonthChange }: Props) => {
+const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props) => {
+
   const handlePrevMonth = () => {
     let [year, month] = currentMonth.split("-")
     let currentDate = new Date(parseInt(year), parseInt(month) - 1, 1)
@@ -36,7 +40,11 @@ const InfoArea = ({ currentMonth, onMonthChange }: Props) => {
         <RightArrow onClick={handleNextMonth} />
       </MonthArea>
 
-      <ResumeArea>RESUME AREA</ResumeArea>
+      <ResumeArea>
+      <ResumeItem title="Lucro" value={income} />
+      <ResumeItem title="Prejuízo" value={expense} />
+      <ResumeItem title="Resultado Líq" value={income - expense} />
+      </ResumeArea>
     </Container>
   )
 }
