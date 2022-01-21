@@ -6,7 +6,7 @@ export const TableLine = styled.tr`
 
 export const TableColumn = styled.td`
   padding: 10px 0;
-
+  font-weight: 500;
 `
 
 export const CategoryWrap = styled.div<{ color: string }>`
@@ -17,6 +17,6 @@ export const CategoryWrap = styled.div<{ color: string }>`
   background-color: ${props => props.color};
 `
 
-export const ValueWrap = styled.div<{ color: string}>`
+export const ValueWrap = styled.div<{ color: string }>`
   color: ${props => props.color};
 `

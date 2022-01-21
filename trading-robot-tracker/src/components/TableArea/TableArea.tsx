@@ -12,10 +12,10 @@ const TableArea = ({ list }: Props) => {
     <Table>
       <thead>
         <tr>
-          <TableHeadColumn width={100}>Data</TableHeadColumn>
-          <TableHeadColumn width={130}>Categoria</TableHeadColumn>
-          <TableHeadColumn>Título</TableHeadColumn>
-          <TableHeadColumn width={150}>Valor</TableHeadColumn>
+          <TableHeadColumn width={130}>Data</TableHeadColumn>
+          <TableHeadColumn width={130}>Operação</TableHeadColumn>
+          <TableHeadColumn>Nome do Robô</TableHeadColumn>
+          <TableHeadColumn width={480}>Resultado</TableHeadColumn>
         </tr>
       </thead>
       <tbody>
