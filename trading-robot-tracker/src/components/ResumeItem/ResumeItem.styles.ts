@@ -13,6 +13,6 @@ export const Title = styled.div`
 
 export const ResumeValues = styled.div<{ color?: string }>`
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
   color: ${ props => props.color ?? "#000" };
 `
