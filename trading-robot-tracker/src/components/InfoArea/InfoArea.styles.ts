@@ -45,4 +45,5 @@ export const ResumeArea = styled.div`
   flex: 2;
   display: flex;
   color: #000;
-`
+  padding-right: 50px;
+  `
