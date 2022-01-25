@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
-flex: 1;
+  flex: 1;
 `
 
 export const Title = styled.div`
@@ -14,5 +14,5 @@ export const Title = styled.div`
 export const ResumeValues = styled.div<{ color?: string }>`
   text-align: center;
   font-weight: 600;
-  color: ${ props => props.color ?? "#000" };
+  color: ${(props) => props.color ?? "#000"};
 `

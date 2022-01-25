@@ -7,6 +7,8 @@ type Props = {
 }
 
 const InputArea = ({ onAdd }: Props) => {
+  
+
   return <div></div>
 }
 
