@@ -30,7 +30,10 @@ Este aplicativo apresenta todas as ferramentas e práticas mais recentes em dese
  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">  
  </div>
  <br>
-
+<br>
+  <img src="https://user-images.githubusercontent.com/85365177/151012707-100de091-104f-44d1-ae53-208b24c1dbc8.PNG" alt="Trading Dashboard" width="auto">
+<br>
+<br>
 
 ## How to run the Project on your PC
 
