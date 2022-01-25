@@ -15,7 +15,7 @@ Typescript - Trading Results Tracker
 <hr />
 
 ## Website
-- Website do Projeto:  <a href="https://typescript-memory-game.surge.sh/" target="_blank"> typescript-trading-tracker.surge.sh </a> 💻 
+- Website do Projeto:  <a href="https://typescript-trading-tracker.surge.sh/" target="_blank"> typescript-trading-tracker.surge.sh </a> 💻 
 
 ## Ferramentas e Tecnologias
 
